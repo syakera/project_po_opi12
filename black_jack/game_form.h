@@ -188,7 +188,7 @@ namespace blackjack {
 			this->buttonMakeBet->Font = (gcnew System::Drawing::Font(L"Futura", 10, System::Drawing::FontStyle::Bold));
 			this->buttonMakeBet->Size = System::Drawing::Size(150, 40);
 			this->buttonMakeBet->Location = System::Drawing::Point(440, 325); // Размещаем рядом с предыдущей кнопкой
-			this->buttonMakeBet->Text = L"Make Bet";
+			buttonMakeBet->Text = L"Make Bet";
 			this->buttonMakeBet->UseVisualStyleBackColor = true;
 			this->buttonMakeBet->BackColor = System::Drawing::Color::LightGreen; // Цвет фона
 			this->buttonMakeBet->ForeColor = System::Drawing::Color::White;     // Цвет текста
