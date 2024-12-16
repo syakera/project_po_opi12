@@ -203,7 +203,7 @@ namespace blackjack {
 			this->gamePanel->Controls->Add(this->buttonDouble);
 			this->gamePanel->Controls->Add(this->buttonHit);
 			this->gamePanel->Controls->Add(this->buttonStand);
-			this->gamePanel->Controls->Add(this->buttonMakeBet);//батон 123
+			this->gamePanel->Controls->Add(this->buttonMakeBet);//батон 123123
 		}
 
 
