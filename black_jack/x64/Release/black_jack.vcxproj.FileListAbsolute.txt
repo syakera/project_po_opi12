@@ -13,3 +13,6 @@ C:\Users\fortn\Desktop\lab-master\lab-master\black_jack\x64\Release\black_jack.v
 C:\laba12\project_po_opi12\black_jack\x64\Release\black_jack.vcxproj.AssemblyReference.cache
 C:\laba12\project_po_opi12\black_jack\x64\Release\blackjack.game_form.resources
 C:\laba12\project_po_opi12\black_jack\x64\Release\black_jack.vcxproj.GenerateResource.cache
+C:\Users\fortn\Desktop\project_po_opi12-main\project_po_opi12-main\black_jack\x64\Release\black_jack.vcxproj.AssemblyReference.cache
+C:\Users\fortn\Desktop\project_po_opi12-main\project_po_opi12-main\black_jack\x64\Release\blackjack.game_form.resources
+C:\Users\fortn\Desktop\project_po_opi12-main\project_po_opi12-main\black_jack\x64\Release\black_jack.vcxproj.GenerateResource.cache

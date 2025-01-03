@@ -46,7 +46,7 @@ namespace blackjack {
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->Icon = gcnew System::Drawing::Icon("icon.ico");
 			this->Text = L"Blackjack Game";
-			this->Size = System::Drawing::Size(800, 600);  // Увеличиваем размер формы
+			this->Size = System::Drawing::Size(575, 450);  // Увеличиваем размер формы
 			this->MaximizeBox = false;
 
 			labelPlayerScore = gcnew Label();
