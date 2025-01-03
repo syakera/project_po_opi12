@@ -1,0 +1,322 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Документация.css">
+    <title>Документация</title>
+</head>
+<body>
+    <h1>Блэк-джэк</h1>
+    
+    <ul><h2 class="One">Разработкой занимались:</h2>
+       <li> Буцкевич Руслан - Разработчик интерфейса(GUI).</li>
+       <li> Мойса Артемий - Разработчик логики.</li>
+       <li>Бараш Никита - Разработчик взаимодействия логики и интерфейса.</li>
+       <li>Хлебко Алексей - тестировщик</li>
+       <li>Садовский Александр - Менеджер проекта и публткации.</li>
+       </ul>
+
+    <h1>Дизайн документа</h1>
+    <h2>Цель проекта:</h2>
+    <div>
+        Создание карточной игры блэк-джэк.
+    </div>
+
+    <h2>Задачи проекта:</h2>
+<div>
+    <ul class="Spisok">
+            <li>
+                Создание графического интерфейса с использованием платформы Windows Forms.
+            </li>
+
+            <li>
+                Разработка логики игры на языке программирования на основе правил игры блэк-джэк.
+            </li>
+
+            <li>
+                Интеграция Windows Forms c языком программирования C++
+            </li>
+
+            <li>
+                использование технологии GIT HUB для хранения версий программы</li>
+
+            </ul>
+            </div>
+        <h2>Концепция</h2>
+        <div>
+        <p>
+            Блэкджек — одна из известнейших в мировом карточном сообществе игр. Его родина — Франция времен 19 века. Парижские игорные заведения в то время предлагали гостям сыграть в vingt-et-un — «двадцать одно» по-французски. В нашей стране он также очень распространен.
+        </p>
+
+        <p>
+            Блэкджек популярен наравне с покером и не сдает своих позиций. Много поколений играло в эту игру в прошлом, будут продолжать состязаться в нее и в дальнейшем. Секрет успеха в простых правилах, а также в ее динамичности и увлекательности. Для победы необходимо превзойти соперников по количеству очков, но не перейти рубеж в 21.
+        </p>
+        <p>
+            Цель игры — набрать 21 очко или близкую к этому сумму. Если игрок набирает сумму очков, превышающую 21, то его ставка проигрывает. Если сумма очков на картах дилера больше, чем 21, то все ставки, оставшиеся в игре, выигрывают. Игроки, набравшие сумму очков большую, чем дилер, выигрывают, их ставки оплачиваются 1:1.
+        </p>
+        </div>
+
+        
+        <h2>Игровые механики</h2>
+        <div>
+            <ul class="Spisok">
+            <li>
+                Make bet: игрок нажатием на кнопку увеличивает ставку.
+            </li>
+            <li>
+                Hit: игрок ,нажимая на кнопку, получает дополнительную карту в руку из колоды.
+            </li>
+            <li>
+                Stand: игрок, нажимая на эту кнопку,"говорит", что ему больше не надо карт.
+            </li>
+        </ul>
+        </div>
+        <h2>Персонажи</h2>
+        <div>
+            <ul>
+            <li>Главный герой- главным героем являетесь Вы. Вашей задачей является победа над диллером.</li>
+            <li>Диллер-раздаёт Вам и себе карты.</li>
+            </ul>
+        </div>
+
+
+            <h2>Визуальный стиль:</h2>
+            <div>
+                    Графика:  В игре присутствуют стилизованные кнопки на красивом фоне.
+            </div>
+
+            <h1>Техническая документация</h1>
+    <h2>Архитектура система</h2>
+    <div>
+        <p>
+            Ссылка на Git Hub с игрой - <a href="https://github.com/syakera/project_po_opi12">https://github.com/syakera/project_po_opi12</a>
+        </p>
+        <p> 
+
+                Для создания проекта мы использовали , популярный язык программирования C++. C++ -  компилируемый, статически типизированный язык программирования общего назначения. философия дизайна подчеркивает удобочитаемость кода с использованием значительных отступов. 
+
+        </p>
+        <p>
+           Для реализации функциональности мы использовали библиотеки:System, System::Windows::Forms, System::Drawin. System: Основное пространство имен .NET, содержащее базовые классы и типы данных.
+            System::Windows::Forms: Пространство имен, предоставляющее классы для создания приложений с графическим интерфейсом пользователя (GUI) на платформе Windows. В данном коде используются классы, такие как `Form`, `Label` и `Button`.
+           System::Drawing: Пространство имен, содержащее классы для работы с графикой, включая рисование, обработку изображений и шрифтов.
+        </p>
+           <p>
+            <h3>Уровень представления (UI Layer)</h3>
+            <ul>
+    <li>Форма игры (game_form): Основной интерфейс, на котором отображается информация об игре, такая как очки игрока и дилера, баланс и текущая ставка.</li>
+     <li> Элементы управления: 
+       - Лейблы для отображения очков, баланса и ставки.
+       - Кнопки для управления игрой: "Hit", "Stand", "Make Bet".
+    </li>
+   <li>Стили и оформление: Настройка внешнего вида элементов управления, включая цвет фона, шрифты и размеры.</li>
+   </p>
+
+<h3>Уровень бизнес-логики (Business Logic Layer)</h3>
+<ul>
+   <li>Логика игры: Управление правилами игры в блэкджек, включая расчет очков, обработку ставок и определение победителя.</li>
+    <ul>
+        <h4>Модели:</h4>
+     <li>Игрок: Класс, представляющий игрока, с атрибутами для очков и баланса.</li>
+     <li>Дилер: Класс, представляющий дилера, с аналогичными атрибутами.</li>
+     <li>Карты: Класс или структура, представляющая карты в колоде, с методами для раздачи и перемешивания карт.</li>
+     </li>
+     </ul>
+     </ul>
+
+<h3>Уровень данных (Data Layer):</h3>
+<ul>
+   <li>Хранение состояния игры: Возможность сохранения и загрузки состояния игры, а также истории ставок и результатов.</li>
+   <li>Взаимодействие с внешними ресурсами: Опционально, вы можете добавить возможность сохранения данных о пользователе или результатов игры в файл или базу данных.</li>
+           </p>
+    </div>  
+        
+        <h2>Пространство имен</h2>
+        <div>
+        <p>
+        namespace blackjack - Определяет пространство имен `blackjack`, в котором находятся все классы и функции, связанные с игрой.
+        </p>
+        </div>
+
+        <h2>Класс `game_form`</h2>
+        <div>
+        <p>
+        public ref class game_form : public Form - Основной класс формы, наследующий от `System::Windows::Forms::Form`. Содержит все визуальные элементы и логику игры.
+        </p>
+        </div>
+        
+        <h2>Приватные переменные</h2>
+        <div>
+        <ul>
+        <li>int playerScore - Очки игрока.</li>
+        <li>int dealerScore - Очки дилера.</li>
+        <li>int playerBalance - Баланс игрока.</li>
+        <li>int currentBet - Текущая ставка.</li>
+        </ul>
+        </div>
+        
+        <h2>Элементы управления</h2>
+        <p class="kn">
+        Label^ labelPlayerScore;
+        </p>
+        <p class="kn">
+        Label^ labelDealerScore;
+        </p>
+        <p class="kn">
+        Label^ labelBalance;
+        </p>
+        <p class="kn">
+        Label^ labelBet;
+        </p>
+        <p class="kn">
+        Button^ buttonHit;
+        </p>
+        <p class="kn">
+        Button^ buttonStand;
+        </p>
+        <p class="kn">
+        Button^ buttonMakeBet;</p>
+        <p>Лейблы и кнопки для отображения информации и взаимодействия с пользователем.
+    </p>
+        
+    <h2>Конструктор</h2>
+    <p class="kn">
+         public:
+         </p>
+         <p class="kn">
+        game_form(void) {
+            </p>
+            <p class="kn">
+          InitializeComponent();
+          </p>
+          <p class="kn">
+          InitializeGame();</p>
+       <p> - Конструктор класса, который инициализирует компоненты формы и запускает начальную инициализацию игры.
+</p>
+        
+         <h2>Деструктор</h2>
+         <p class="kn">
+        protected:
+        </p>
+        <p class="kn">
+        ~game_form() {}</p>
+        <p>- Деструктор класса, освобождающий ресурсы, используемые формой.</p>
+        
+        <h2>Методы</h2>
+        
+       <p> ### `InitializeComponent`</p>
+
+       <p class="kn">
+       private:
+       </p>
+       <p class="kn">
+        void InitializeComponent() {
+            </p>
+            <p class="kn">
+              this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
+              </p>
+              <p class="kn">
+                 this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
+                </p>
+                <p class="kn">
+                    this->BackgroundImage = System::Drawing::Image::FromFile("background.jpg"); // Установка изображения как фона
+                </p>
+                <p class="kn">
+                        this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch; // Растягивание изображени
+                    </p>
+                    <p class="kn">
+                            this->Icon = gcnew System::Drawing::Icon("icon.ico"); // Установка иконки формы
+                        </p>
+                        <p class="kn">
+                                 this->Text = L"Blackjack Game";
+                                 </p>
+                                 <p class="kn">
+                                    this->Size = System::Drawing::Size(550, 450);
+                                    </p>
+                                    <p class="kn">
+                                        this->MaximizeBox = false;</p>
+        
+                                            <h3>Лейблы для очков и баланса</h3>
+                                            <p class="kn">
+                                                labelPlayerScore = gcnew Label();
+                                                </p>
+                                                <p class="kn">
+                                                    labelDealerScore = gcnew Label();
+                                                    </p>
+                                                    <p class="kn">
+                                                        labelBalance = gcnew Label();
+                                                        </p>
+                                                        <p class="kn">
+                                                            labelBet = gcnew Label();</p>
+      
+        <h3> Кнопки управления</h3>
+        <p class="kn">
+            buttonHit = gcnew Button();
+            </p>
+            <p class="kn">
+                buttonStand = gcnew Button();
+                </p>
+                <p class="kn">
+                    buttonMakeBet = gcnew Button();</p>
+      
+                        <h2> Настройка элементов</h2>
+                        <p> SetupUI() - Метод инициализации компонентов формы, который устанавливает основные свойства окна, такие как положение, стиль границ, фон и иконку.</p>
+      
+      <h2>SetupUI`</h2>
+      
+      <p class="kn">void SetupUI() {</p>
+        <p class="kn">auto buttonStyle = gcnew System::Drawing::Font(L"Verdana", 10, FontStyle::Bold);</p>
+        <p class="kn">    auto borderColor = System::Drawing::Color::Goldenrod;</p>
+            <p class="kn">       auto backColor = System::Drawing::Color::DarkGreen;</p>
+                <p class="kn">      auto foreColor = System::Drawing::Color::White;</p>
+      
+        <h3> Лейблы </h3>
+        <p class="kn"> labelPlayerScore->Text = L"Player Score: 0";</p>
+            <p class="kn">labelPlayerScore->Location = Point(50, 50);</p>
+                <p class="kn"> labelPlayerScore->Size = System::Drawing::Size(200, 30);</p>
+                    <p class="kn"> labelPlayerScore->BackColor = System::Drawing::Color::Transparent;</p>
+                        <p class="kn"> labelPlayerScore->ForeColor = System::Drawing::Color::White;</p>
+      
+                            <p class="kn">labelDealerScore->Text = L"Dealer Score: 0";</p>
+                                <p class="kn"> labelDealerScore->Location = Point(50, 100);</p>
+                                    <p class="kn"> labelDealerScore->Size = System::Drawing::Size(200, 30);</p>
+                                        <p class="kn"> labelDealerScore->BackColor = System::Drawing::Color::Transparent;</p>
+        <p class="kn"> labelDealerScore->ForeColor = System::Drawing::Color::White;</p>
+      
+            <p class="kn"> labelBalance->Text = L"Balance: $1000";</p>
+                <p class="kn"> labelBalance->Location = Point(50, 150);</p>
+                    <p class="kn"> labelBalance->Size = System::Drawing::Size(200, 30);</p>
+                        <p class="kn"> labelBalance->BackColor = System::Drawing::Color::Transparent;</p>
+                            <p class="kn"> labelBalance->ForeColor = System::Drawing::Color::White;</p>
+      
+                                <p class="kn"> labelBet->Text = L"Current Bet: $0";</p>
+                                    <p class="kn"> labelBet->Location = Point(50, 200);</p>
+                                        <p class="kn"> labelBet->Size = System::Drawing::Size(200, 30);</p>
+                                            <p class="kn"> labelBet->BackColor = System::Drawing::Color::Transparent;</p>
+                                                <p class="kn"> labelBet->ForeColor = System::Drawing::Color::White;</p>
+      
+<h3>Кнопки</h3>
+<p>Make Bet</p>
+    <p class="kn"> buttonMakeBet->Text = L"Make Bet";</p>
+        <p class="kn">  buttonMakeBet->Location = Point(50, 300);</p>
+            <p class="kn">  buttonMakeBet->Size = System::Drawing::Size(100, 40);</p>
+        <p class="kn">   buttonMakeBet->Font = buttonStyle;</p>
+            <p class="kn">   buttonMakeBet->BackColor = backColor;</p>
+                <p class="kn">   buttonMakeBet->ForeColor = foreColor;</p>
+                    <p class="kn">   buttonMakeBet->FlatStyle = FlatStyle::Flat;</p>
+                        <p class="kn">   buttonMakeBet->FlatAppearance->BorderColor = borderColor;</p>
+                            <p class="kn">   buttonMakeBet->FlatAppearance->BorderSize = 2;</p>
+                                <p class="kn">   buttonMakeBet->Click += gcnew EventHandler(this, &game_form::OnMakeBetClick);  }</p>
+      <p> - Этот метод создает и настраивает визуальные элементы интерфейса, такие как лейблы для отображения очков и кнопки управления. Устанавливает текст, размеры, цвета и расположение элементов управления.</p>
+      
+      <h2> Обработчики событий</h2>
+      
+      <p class="kn">buttonMakeBet->Click += gcnew EventHandler(this, &game_form::OnMakeBetClick);`</p>
+        <p> Привязывает обработчик события клика по кнопке "Сделать ставку".</p>
+<h1>Документации по тестированию</h1>
+        <h2>Тестирование</h2>
+        <p>Во время тестирования багов не было обнаружено.</p>
+</div>
+</body>
+</html
